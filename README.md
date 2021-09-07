@@ -125,6 +125,26 @@ console.log( accumulator() );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/incr/max`][@stdlib/stats/incr/max]: compute a maximum value incrementally.
+-   [`@stdlib/stats/incr/mmidrange`][@stdlib/stats/incr/mmidrange]: compute a moving mid-range incrementally.
+-   [`@stdlib/stats/incr/mmin`][@stdlib/stats/incr/mmin]: compute a moving minimum incrementally.
+-   [`@stdlib/stats/incr/mrange`][@stdlib/stats/incr/mrange]: compute a moving range incrementally.
+-   [`@stdlib/stats/incr/msummary`][@stdlib/stats/incr/msummary]: compute a moving statistical summary incrementally.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -179,6 +199,20 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-incr-mmax/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/stats/incr/max]: https://github.com/stdlib-js/stats-incr-max
+
+[@stdlib/stats/incr/mmidrange]: https://github.com/stdlib-js/stats-incr-mmidrange
+
+[@stdlib/stats/incr/mmin]: https://github.com/stdlib-js/stats-incr-mmin
+
+[@stdlib/stats/incr/mrange]: https://github.com/stdlib-js/stats-incr-mrange
+
+[@stdlib/stats/incr/msummary]: https://github.com/stdlib-js/stats-incr-msummary
+
+<!-- </related-links> -->
 
 </section>
 
