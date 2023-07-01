@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,30 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
-* Compute a moving maximum incrementally.
+* If provided a value, returns an updated maximum value; otherwise, returns the current maximum value.
 *
-* @module @stdlib/stats-incr-mmax
+* ## Notes
+*
+* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
+*
+* @param x - value
+* @returns maximum value
+*/
+type accumulator = ( x?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a moving maximum value.
+*
+* @param W - window size
+* @throws must provide a positive integer
+* @returns accumulator function
 *
 * @example
-* var incrmmax = require( '@stdlib/stats-incr-mmax' );
-*
 * var accumulator = incrmmax( 3 );
 *
 * var m = accumulator();
@@ -46,12 +60,9 @@
 * m = accumulator();
 * // returns 5.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrmmax( W: number ): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrmmax;
